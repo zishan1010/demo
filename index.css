@@ -128,13 +128,13 @@ nav ul li a:hover {
 
 .banner-text button {
     padding: 10px 20px;
-    background-color: #ffcd00;
+    background-color: #f6d241;
     color: #333;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 30px;
 }
 
 .banner-text button:hover {
@@ -145,7 +145,7 @@ nav ul li a:hover {
 .banner-image {
     width: 500px;
     height: auto;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 /* Popular Products */
@@ -176,7 +176,7 @@ nav ul li a:hover {
 }
 
 .product-item img {
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 8px;
 }
@@ -634,4 +634,117 @@ header p {
 .model-card p {
     color: #666;
     font-size: 14px;
+}
+
+
+/* General Mobile Adjustments */
+@media (max-width: 600px) {
+
+    /* Header Section */
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .back-button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    /* Quality Description Section */
+    .quality-description {
+        padding: 15px;
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .quality-description h2 {
+        font-size: 22px;
+    }
+
+    .quality-description p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    /* Models Grid */
+    .models-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    /* Model Card Adjustments */
+    .model-card {
+        padding: 10px;
+    }
+
+    .model-card h3 {
+        font-size: 18px;
+    }
+
+    .model-card p {
+        font-size: 12px;
+    }
+
+    /* Image Slider Adjustments */
+    .image-slider {
+        height: 150px; /* Reduce image height for smaller screens */
+    }
+}
+
+
+
+
+
+.cart-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: #edf2f6;
+    text-decoration: none;
+}
+
+.cart-icon:hover {
+    color: #ffcd00;
+}
+
+
+/* Buy Now Button */
+.buy-now-button {
+    padding: 10px 20px;
+    background-color: #ffcd00;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-button:hover {
+    background-color: #004274;
+    color: white;
+}
+
+/* Add to Cart Button */
+.add-to-cart-button {
+    padding: 10px 20px;
+    background-color: #004274;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #ffcd00;
+    color: #333;
 }
