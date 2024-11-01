@@ -403,3 +403,235 @@ footer a:hover {
 .social-icon {
     font-size: 1.5em; /* Increase icon size */
 }
+
+
+/* Media Queries */
+
+/* Small screens (mobiles, 600px and below) */
+@media (max-width: 600px) {
+    /* Adjust logo font size */
+    .logo h1 {
+        font-size: 40px;
+    }
+
+    /* Stack navigation items vertically */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Adjust banner text */
+    .banner-text h2 {
+        font-size: 24px;
+    }
+
+    /* Popular products grid to a single column */
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Resize footer */
+    footer p {
+        font-size: 12px;
+    }
+}
+
+/* Medium screens (tablets, 601px to 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+    /* Logo font size adjustment */
+    .logo h1 {
+        font-size: 50px;
+    }
+
+    /* Adjust banner image size */
+    .banner-image {
+        width: 400px;
+    }
+
+    /* Product grid to two columns */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large screens (desktops, 993px and above) */
+@media (min-width: 993px) {
+    /* Full-width logo */
+    .logo h1 {
+        font-size: 60px;
+    }
+
+    /* Banner adjustments */
+    .banner-image {
+        width: 500px;
+    }
+
+    /* Product grid to three columns */
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* General Styles for vehicle-models.html */
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #004274;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #ffcd00;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.back-button:hover {
+    background-color: #004274;
+    color: white;
+}
+
+/* Models Grid */
+.models-grid {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.model-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.model-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.model-card h3 {
+    color: #004274;
+    margin: 10px 0;
+}
+
+.model-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+.model-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Quality Description Section */
+.quality-description {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.quality-description h2 {
+    font-size: 28px;
+    color: #004274;
+    margin-bottom: 10px;
+}
+
+.quality-description p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Image Slider in Model Cards */
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image-slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.image-slider img:first-child {
+    opacity: 1;
+}
+
+.model-card:hover .image-slider img {
+    animation: slideImages 6s infinite;
+}
+
+@keyframes slideImages {
+    0%, 20% {
+        opacity: 1;
+    }
+    33.33%, 53.33% {
+        opacity: 0;
+    }
+    66.66%, 86.66% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* General Styling for Model Cards */
+.model-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.model-card:hover {
+    transform: scale(1.05);
+}
+
+.model-card h3 {
+    color: #004274;
+    margin: 10px 0;
+}
+
+.model-card p {
+    color: #666;
+    font-size: 14px;
+}
