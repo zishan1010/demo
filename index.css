@@ -748,3 +748,66 @@ header p {
     background-color: #ffcd00;
     color: #333;
 }
+
+
+/* Mobile Adjustments for Options Page */
+@media (max-width: 600px) {
+    /* Header Section */
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .back-button, .cart-icon {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    /* Options Container Grid */
+    .options-container {
+        grid-template-columns: 1fr; /* Single column layout on small screens */
+        gap: 15px;
+        padding: 10px;
+    }
+
+    /* Option Card Adjustments */
+    .option-card {
+        padding: 10px;
+    }
+
+    .option-info h3 {
+        font-size: 18px;
+    }
+
+    .option-info .price {
+        font-size: 16px;
+    }
+
+    .option-info p {
+        font-size: 12px;
+    }
+
+    /* Image Size for Mobile */
+    .option-image {
+        height: 200px; /* Reduced height for smaller screens */
+    }
+
+    .option-image img {
+        max-width: 90%; /* Constrain width to fit within the screen */
+        height: auto;
+    }
+
+    /* Button Adjustments */
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Add spacing between buttons */
+    }
+
+    .buy-now-button, .add-to-cart-button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
