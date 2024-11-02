@@ -902,3 +902,47 @@ button {
 button:hover {
     background-color: #218838;
 }
+
+
+.buttons {
+    display: flex;               /* Align buttons in a row */
+    justify-content: center;     /* Center the buttons horizontally */
+    gap: 10px;                  /* Space between buttons */
+    margin-top: 20px;           /* Space above the buttons */
+}
+
+.buy-now-button {
+    background-color: #0962a6;  /* Green background */
+    color: white;               /* White text */
+    border: none;               /* No border */
+    padding: 10px 20px;        /* Padding for button */
+    text-align: center;         /* Center text */
+    text-decoration: none;      /* No underline */
+    display: inline-block;      /* Display as inline-block */
+    font-size: 16px;           /* Font size */
+    border-radius: 5px;        /* Rounded corners */
+    cursor: pointer;            /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.buy-now-button:hover {
+    background-color: #45a049;  /* Darker green on hover */
+}
+
+.buttons button {
+    background-color: #008CBA;  /* Blue background for cart button */
+    color: white;               /* White text */
+    border: none;               /* No border */
+    padding: 10px 20px;        /* Padding for button */
+    text-align: center;         /* Center text */
+    text-decoration: none;      /* No underline */
+    display: inline-block;      /* Display as inline-block */
+    font-size: 16px;           /* Font size */
+    border-radius: 5px;        /* Rounded corners */
+    cursor: pointer;            /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.buttons button:hover {
+    background-color: #007B9E;  /* Darker blue on hover */
+}
