@@ -12,6 +12,31 @@ body {
 }
 
 /* Header */
+
+
+/* Contact Info in Header */
+header .contact-info {
+    font-size: 16px;
+    color: #333; /* Dark text for contact info */
+    background-color: #004274;
+    text-align: right; /* Aligns contact info to the right */
+    padding: 10px 20px;
+}
+header {
+    background-color: #004274;
+    color: #004274;
+    padding: 10px 0;
+}
+
+header .contact-info p {
+    margin: 0;
+}
+
+header .contact-info strong {
+    color: #000; /* Bold color for labels */
+    background-color: #004274;
+}
+
 header {
     background-color: #004274;
     color: #fff;
@@ -35,6 +60,8 @@ header {
     font-weight: bold;
     color: #ebbf12;
 }
+
+
 
 nav ul {
     display: flex;
@@ -78,10 +105,36 @@ nav ul li a:hover {
     border-radius: 4px;
     cursor: pointer;
 }
+/* Header Buttons Styling */
+.header-buttons {
+    display: flex;
+    gap: 10px; /* Space between Back and Cart buttons */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.header-buttons .back-button, .header-buttons .cart-icon {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.header-buttons .cart-icon i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.header-buttons .back-button:hover, .header-buttons .cart-icon:hover {
+    background-color: #333;
+    color: #ebf766;
+}
 
 .search-bar button:hover {
     background-color: #004274;
-    color: #fff;
+    color: #5f61f5;
 }
 
 /* Banner */
@@ -143,7 +196,7 @@ nav ul li a:hover {
 }
 
 .banner-image {
-    width: 500px;
+    width: 550px;
     height: auto;
     margin-left: 10px;
 }
@@ -521,7 +574,7 @@ header p {
     overflow: hidden;
     text-align: center;
     padding: 15px;
-    transition: transform 0.3s ease;
+    transition: transform 5.3s ease;
 }
 
 .model-card img {
@@ -585,7 +638,7 @@ header p {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 5.5s ease;
 }
 
 .image-slider img:first-child {
@@ -593,7 +646,7 @@ header p {
 }
 
 .model-card:hover .image-slider img {
-    animation: slideImages 6s infinite;
+    animation: slideImages 10s infinite;
 }
 
 @keyframes slideImages {
@@ -619,7 +672,7 @@ header p {
     overflow: hidden;
     text-align: center;
     padding: 15px;
-    transition: transform 0.3s ease;
+    transition: transform 5.3s ease;
 }
 
 .model-card:hover {
@@ -714,6 +767,8 @@ header p {
 }
 
 
+
+
 /* Buy Now Button */
 .buy-now-button {
     padding: 10px 20px;
@@ -734,7 +789,7 @@ header p {
 /* Add to Cart Button */
 .add-to-cart-button {
     padding: 10px 20px;
-    background-color: #004274;
+    background-color: #1b75bf;
     color: white;
     border: none;
     border-radius: 4px;
@@ -748,6 +803,9 @@ header p {
     background-color: #ffcd00;
     color: #333;
 }
+
+
+
 
 
 /* Mobile Adjustments for Options Page */
@@ -810,4 +868,37 @@ header p {
         font-size: 14px;
         padding: 8px 12px;
     }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    
+    padding: 10px;
+    text-align: center;
+}
+
+#cart {
+    margin: 20px;
+}
+
+#cart div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
 }
